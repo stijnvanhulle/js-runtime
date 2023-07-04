@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "separate-pull-requests": false,
+  "packages": {
+    "js-runtime": {
+      "component": "js-runtime",
+      "changelog-path": "CHANGELOG.md",
+      "release-type": "node"
+    }
+  }
+}
