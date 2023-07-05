@@ -62,21 +62,22 @@ export function getRuntimeVersion(): string {
 /**
  * Switch based on the current runtime.
  */
-export function runtimeSwitch<T>(obj: Partial<Record<Runtime, T>>): T | undefined {
+export function runtimeSwitch<T>(obj: Partial<Record<Runtime, T>>): T | undefined
+export function runtimeSwitch<T>(obj: Partial<Record<Runtime, T>>, fallback: T): T
+export function runtimeSwitch<T>(obj: Partial<Record<Runtime, T>>, fallback?: T): T | undefined {
   const runtime = getRuntime()
 
-  return obj[runtime]
+  return obj[runtime] ?? fallback
 }
 
 /**
  * Dynamic import based on switch data, see runtimeSwitch.
  */
-export async function runtimeImport(imports: Partial<Record<Runtime, string>>): Promise<any | undefined> {
+
+export function runtimeImport<T>(imports: Partial<Record<Runtime, string>>): Promise<any | undefined>
+export function runtimeImport<T>(imports: Partial<Record<Runtime, string>>, fallback: string): Promise<any>
+export async function runtimeImport(imports: Partial<Record<Runtime, string>>, fallback?: string): Promise<any | undefined> {
   const runtime = getRuntime()
 
-  if (!imports[runtime]) {
-    return undefined
-  }
-
-  return import((imports as Record<Runtime, string>)[runtime])
+  return import((imports as Record<Runtime, string>)[runtime] ?? fallback)
 }
