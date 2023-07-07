@@ -24,9 +24,9 @@ Detect which JavaScript runtime is being used, [Bun](https://bun.sh/), [Deno](ht
 `index.js`
 
 ```javascript
-import { getRuntime } from "js-runtime";
+import { get } from "js-runtime";
 
-console.log(getRuntime()); //node or deno or bun
+console.log(get()); //node or deno or bun
 ```
 
 ```bash
@@ -37,7 +37,7 @@ $ node index.js
 
 ## API
 
-### getRuntime
+### get
 
 Return the current runtime.
 
@@ -60,7 +60,7 @@ Returns: `boolean`
 Type: `function`\
 Returns: `boolean`
 
-### getRuntimeVersion
+### getVersion
 
 Retrieve the version used in the current runtime.
 
@@ -68,7 +68,7 @@ Type: `function`\
 Returns: `string`
 
 
-### runtimeSwitch
+### switcher
 
 Switch based on the current runtime.
 
@@ -78,9 +78,9 @@ Returns: `T`
 `index.js`
 
 ```typescript
-import { runtimeSwitch } from "js-runtime";
+import { switcher } from "js-runtime";
 
-const message = runtimeSwitch({
+const message = switcher({
   bun: "Script is running with Bun",
   deno: "Script is running with Deno",
   node: "Script is running with Node",
@@ -94,9 +94,9 @@ $ bun index.ts
 script is running with Bun
 ```
 
-### runtimeImport
+### importer
 
-Dynamic import based on switch data, see runtimeSwitch.
+Dynamic import based on switch data, see switcher.
 
 Type: `function`\
 Returns: `T`
@@ -104,9 +104,9 @@ Returns: `T`
 `index.js`
 
 ```typescript
-import { runtimeImport } from "js-runtime";
+import { importer } from "js-runtime";
 
-const SQLite = await runtimeImport({
+const SQLite = await importer({
     bun: "bun:sqlite",
     deno: "https://deno.land/x/sqlite3@0.9.1/mod.ts",
     node: "better-sqlite3"
