@@ -1,7 +1,7 @@
 import { expect, test } from 'bun:test'
 
-import { getRuntime } from './index'
+import { get } from './runtime'
 
-test('getRuntime', () => {
-  expect(getRuntime).toBeDefined()
+test('get', () => {
+  expect(get).toBeDefined()
 })
