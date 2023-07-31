@@ -20,8 +20,8 @@ importers:
         specifier: ~5.61.0
         version: 5.61.0(eslint@8.44.0)(typescript@5.1.6)
       bun-types:
-        specifier: ^0.6.12
-        version: 0.6.12
+        specifier: ^0.7.1
+        version: 0.7.1
       eslint-config-prettier:
         specifier: ~8.8.0
         version: 8.8.0(eslint@8.44.0)
@@ -810,8 +810,8 @@ packages:
       fill-range: 7.0.1
     dev: true
 
-  /bun-types@0.6.12:
-    resolution: {integrity: sha512-cICej22OR6uFNWMRgjKZR7X5w8WEsbM0lXhzftwCNvdsBDKNgLqLas5G2K0PuxLIxrUg859pP1i+FrngiotV1Q==}
+  /bun-types@0.7.1:
+    resolution: {integrity: sha512-TwB4gqwPIWuBFpvISEOciXr9W+yi5b+zRLiydOxawXuQEdgFHnEYdIUDZbIJ6/dtiHJIGBBS/KY+0qwJL5FDKQ==}
     dev: true
 
   /bundle-require@4.0.1(esbuild@0.17.19):
