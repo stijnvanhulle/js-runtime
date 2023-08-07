@@ -8,8 +8,8 @@ importers:
         specifier: ^8.44.0
         version: 8.44.0
       '@types/eslint':
-        specifier: ~8.40.2
-        version: 8.40.2
+        specifier: ~8.44.2
+        version: 8.44.2
       '@types/node':
         specifier: ^20.3.3
         version: 20.3.3
@@ -573,6 +573,13 @@ packages:
 
   /@types/eslint@8.40.2:
     resolution: {integrity: sha512-PRVjQ4Eh9z9pmmtaq8nTjZjQwKFk7YIHIud3lRoKRBgUQjgjRmoGxxGEPXQkF+lH7QkHJRNr5F4aBgYCW0lqpQ==}
+    dependencies:
+      '@types/estree': 1.0.1
+      '@types/json-schema': 7.0.12
+    dev: true
+
+  /@types/eslint@8.44.2:
+    resolution: {integrity: sha512-sdPRb9K6iL5XZOmBubg8yiFp5yS/JdUDQsq5e6h95km91MCYMuvp7mh1fjPEYUhvHepKpZOjnEaMBR4PxjWDzg==}
     dependencies:
       '@types/estree': 1.0.1
       '@types/json-schema': 7.0.12
