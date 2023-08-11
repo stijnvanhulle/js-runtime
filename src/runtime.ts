@@ -65,7 +65,7 @@ export function getVersion(): string {
 export function switcher<TOutput>(obj: Partial<Record<Runtime, TOutput>>): TOutput | undefined
 export function switcher<TOutput, TFallback extends string = Runtime>(
   obj: Partial<Record<Runtime, TOutput>> & Record<TFallback, TOutput>,
-  fallback: TFallback
+  fallback: TFallback,
 ): TOutput
 export function switcher<TOutput>(obj: Partial<Record<Runtime, TOutput>>, fallback?: Runtime): TOutput | undefined {
   const runtime = get()
@@ -80,7 +80,7 @@ export function switcher<TOutput>(obj: Partial<Record<Runtime, TOutput>>, fallba
 export function importer<TOutput>(imports: Partial<Record<Runtime, string>>): Promise<TOutput | undefined>
 export function importer<TOutput, TFallback extends string = Runtime>(
   imports: Partial<Record<Runtime, string>> & Record<TFallback, string>,
-  fallback: TFallback
+  fallback: TFallback,
 ): Promise<TOutput>
 export async function importer<TOutput>(imports: Partial<Record<Runtime, string>>, fallback?: Runtime): Promise<TOutput | undefined> {
   const runtime = get()
