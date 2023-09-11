@@ -46,7 +46,7 @@
     "@types/eslint": "~8.44.2",
     "@types/node": "^20.4.9",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
-    "@typescript-eslint/parser": "~6.3.0",
+    "@typescript-eslint/parser": "~6.6.0",
     "bun-types": "^0.7.3",
     "eslint-config-prettier": "~9.0.0",
     "eslint-formatter-pretty": "^5.0.0",
