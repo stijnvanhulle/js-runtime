@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.5](https://github.com/stijnvanhulle/js-runtime/compare/js-runtime-v0.0.4...js-runtime-v0.0.5) (2023-09-12)
+
+
+### Bug Fixes
+
+* cli update to support bun@1.0.0 ([6bf6933](https://github.com/stijnvanhulle/js-runtime/commit/6bf693364e050688e192a0f34b35473f9bf3695e))
+
 ## [0.0.4](https://github.com/stijnvanhulle/js-runtime/compare/js-runtime-v0.0.3...js-runtime-v0.0.4) (2023-08-11)
 
 
