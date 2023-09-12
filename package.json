@@ -6,6 +6,7 @@
     "bun",
     "node",
     "deno",
+    "jest",
     "runtime"
   ],
   "repository": {
@@ -33,11 +34,13 @@
   ],
   "scripts": {
     "build": "tsup",
+    "build:bun": "bun run ./scripts/build.ts",
     "format": "prettier --write .",
     "lint": "ESLINT_USE_FLAT_CONFIG=true eslint --format pretty .",
     "lint-fix": "bun run lint --quiet --fix",
     "release": "npm publish --no-git-check",
     "start": "tsup --watch",
+    "start:bun": "bun run build.ts --watch",
     "test": "bun test",
     "typecheck": "tsc -p ./tsconfig.json --noEmit --emitDeclarationOnly false"
   },
@@ -52,6 +55,7 @@
     "eslint-formatter-pretty": "^5.0.0",
     "eslint-plugin-eslint-plugin": "^5.1.1",
     "globals": "^13.21.0",
+    "bun": "^1.0.0",
     "prettier": "^3.0.3",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
