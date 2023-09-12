@@ -62,7 +62,7 @@
   },
   "packageManager": "bun@1.0.0",
   "engines": {
-    "node": ">=18",
+    "node": ">=20",
     "bun": ">=1.0.0"
   },
   "publishConfig": {
