@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.6](https://github.com/stijnvanhulle/js-runtime/compare/js-runtime-v0.0.5...js-runtime-v0.0.6) (2023-09-12)
+
+
+### Bug Fixes
+
+* drop node 18 support ([5bb5de0](https://github.com/stijnvanhulle/js-runtime/commit/5bb5de03f01698af7992726448345c62ec62f811))
+
 ## [0.0.5](https://github.com/stijnvanhulle/js-runtime/compare/js-runtime-v0.0.4...js-runtime-v0.0.5) (2023-09-12)
 
 
