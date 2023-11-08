@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.7](https://github.com/stijnvanhulle/js-runtime/compare/js-runtime-v0.0.6...js-runtime-v0.0.7) (2023-11-08)
+
+
+### Bug Fixes
+
+* use node 18 as minimum ([6364cf9](https://github.com/stijnvanhulle/js-runtime/commit/6364cf901934e6b4d6390b0e27a33baf9e1ed3d8))
+
 ## [0.0.6](https://github.com/stijnvanhulle/js-runtime/compare/js-runtime-v0.0.5...js-runtime-v0.0.6) (2023-09-12)
 
 
