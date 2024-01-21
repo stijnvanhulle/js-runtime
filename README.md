@@ -9,6 +9,14 @@
 
 Detect which JavaScript runtime is being used, [Bun](https://bun.sh/), [Deno](https://deno.com/runtime) or [NodeJS](https://nodejs.org/).
 
+
+## Install
+
+```bash
+npm i js-runtime
+```
+
+
 ## Usage
 
 `index.js`
