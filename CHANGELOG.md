@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.8](https://github.com/stijnvanhulle/js-runtime/compare/js-runtime-v0.0.7...js-runtime-v0.0.8) (2024-04-08)
+
+
+### Bug Fixes
+
+* upgrade packages ([e32e099](https://github.com/stijnvanhulle/js-runtime/commit/e32e09993d3e7df1eaccb278b02da3969c88a852))
+* upgrade packages ([2ff228f](https://github.com/stijnvanhulle/js-runtime/commit/2ff228fef52ca342f926da528ddb1f3f9a786599))
+
 ## [0.0.7](https://github.com/stijnvanhulle/js-runtime/compare/js-runtime-v0.0.6...js-runtime-v0.0.7) (2023-11-08)
 
 
